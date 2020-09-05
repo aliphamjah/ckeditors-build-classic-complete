@@ -1,5 +1,5 @@
 {
-  "name": "@ckeditor/ckeditor5-build-classic",
+  "name": "@alip/ckeditor5-build-classic-complete",
   "version": "22.0.0",
   "description": "The classic editor build of CKEditor 5 – the best browser-based rich text editor.",
   "keywords": [
@@ -71,21 +71,17 @@
     "node": ">=12.0.0",
     "npm": ">=5.7.1"
   },
+  "engineStrict": true,
   "author": "CKSource (http://cksource.com/)",
   "license": "GPL-2.0-or-later",
   "homepage": "https://ckeditor.com/ckeditor-5",
   "bugs": "https://github.com/ckeditor/ckeditor5/issues",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ckeditor/ckeditor5.git",
-    "directory": "packages/ckeditor5-build-classic"
-  },
+  "repository": "https://github.com/aliphamjah/ckeditors-build-classic-complete",
   "scripts": {
     "build": "webpack --mode production",
     "preversion": "npm run build"
   },
   "dependencies": {
     "@ckeditor/ckeditor5-easy-image": "^22.0.0"
-  },
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
+  }
 }
