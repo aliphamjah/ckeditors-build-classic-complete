@@ -24,7 +24,7 @@ See:
 First, install the build from npm:
 
 ```bash
-npm install --save @alip/ckeditor5-build-classic
+npm install --save @alip/ckeditor5-build-classic-complete
 ```
 
 And use it in your website:
@@ -49,7 +49,7 @@ And use it in your website:
 Or in your JavaScript application:
 
 ```js
-import ClassicEditor from '@alip/ckeditor5-build-classic';
+import ClassicEditor from '@alip/ckeditor5-build-classic-complete';
 
 // Or using the CommonJS version:
 // const ClassicEditor = require( '@alip/ckeditor5-build-classic' );

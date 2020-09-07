@@ -10,6 +10,7 @@ import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment.js';
 import Autoformat from '@ckeditor/ckeditor5-autoformat/src/autoformat.js';
 import Autolink from '@ckeditor/ckeditor5-link/src/autolink.js';
 import Autosave from '@ckeditor/ckeditor5-autosave/src/autosave.js';
+import Base64UploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/base64uploadadapter';
 import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote.js';
 import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold.js';
 import CKFinder from '@ckeditor/ckeditor5-ckfinder/src/ckfinder.js';
@@ -72,6 +73,7 @@ ClassicEditor.builtinPlugins = [
 	Autoformat,
 	Autolink,
 	Autosave,
+	Base64UploadAdapter,
 	BlockQuote,
 	Bold,
 	CKFinder,
@@ -131,7 +133,62 @@ ClassicEditor.builtinPlugins = [
 ClassicEditor.defaultConfig = {
 	toolbar: {
 		items: [
-			"alignment:left", "alignment:right", "alignment:center", "alignment:justify", "alignment", "blockQuote", "bold", "ckfinder", "code", "codeBlock", "imageTextAlternative", "imageUpload", "selectAll", "undo", "redo", "exportPdf", "exportWord", "fontBackgroundColor", "fontColor", "fontFamily", "fontSize", "highlight:yellowMarker", "highlight:greenMarker", "highlight:pinkMarker", "highlight:blueMarker", "highlight:redPen", "highlight:greenPen", "removeHighlight", "highlight", "horizontalLine", "imageResize:original", "imageResize:25", "imageResize:50", "imageResize:75", "imageResize", "imageStyle:full", "imageStyle:side", "indent", "outdent", "italic", "heading", "link", "numberedList", "bulletedList", "mediaEmbed", "pageBreak", "removeFormat", "specialCharacters", "restrictedEditingException", "insertTable", "tableColumn", "tableRow", "mergeTableCells", "tableCellProperties", "tableProperties", "underline"
+			"alignment:left",
+			"alignment:right",
+			"alignment:center",
+			"alignment:justify",
+			"alignment",
+			"blockQuote",
+			"bold",
+			"ckfinder",
+			"code",
+			"codeBlock",
+			"imageTextAlternative",
+			"imageUpload",
+			"selectAll",
+			"undo",
+			"redo",
+			"exportPdf",
+			"exportWord",
+			"fontBackgroundColor",
+			"fontColor",
+			"fontFamily",
+			"fontSize",
+			"highlight:yellowMarker",
+			"highlight:greenMarker",
+			"highlight:pinkMarker",
+			"highlight:blueMarker",
+			"highlight:redPen",
+			"highlight:greenPen",
+			"removeHighlight",
+			"highlight",
+			"horizontalLine",
+			"imageResize:original",
+			"imageResize:25",
+			"imageResize:50",
+			"imageResize:75",
+			"imageResize",
+			"imageStyle:full",
+			"imageStyle:side",
+			"indent",
+			"outdent",
+			"italic",
+			"heading",
+			"link",
+			"numberedList",
+			"bulletedList",
+			"mediaEmbed",
+			"pageBreak",
+			"removeFormat",
+			"specialCharacters",
+			"restrictedEditingException",
+			"insertTable",
+			"tableColumn",
+			"tableRow",
+			"mergeTableCells",
+			"tableCellProperties",
+			"tableProperties",
+			"underline"
 		]
 	},
 	image: {

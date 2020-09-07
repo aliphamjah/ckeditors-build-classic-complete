@@ -82,6 +82,7 @@
     "preversion": "npm run build"
   },
   "dependencies": {
-    "@ckeditor/ckeditor5-easy-image": "^22.0.0"
+    "@ckeditor/ckeditor5-easy-image": "^22.0.0",
+    "@ckeditor/ckeditor5-upload": "^22.0.0"
   }
 }
